@@ -1,0 +1,13 @@
+{
+  "name": "online-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "website": "pnpm -F @icelf/website run dev",
+    "services": "pnpm -F @icelf/services run start:dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
