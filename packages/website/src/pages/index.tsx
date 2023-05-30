@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
 import axios from 'axios'
 import type { File } from '@icelf/model/file'
 
@@ -20,6 +21,7 @@ const Home = () => {
     <main className="p-4">
       {fileList.map((file) => (
         <li key={file.id} className="list-none">
+          <Image src="" alt="icon" />
           {file.name}
         </li>
       ))}
