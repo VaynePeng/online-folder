@@ -1,15 +1,15 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { Folder, TypeEnum } from '../folder/folder'
+import { File, TypeEnum } from '@icelf/model/file'
 
-const getFiles = (dir: string): Array<Folder> => {
+const getFiles = (dir: string): Array<File> => {
   const files = fs.readdirSync(dir)
-  const fileList: Array<Folder> = []
+  const fileList: Array<File> = []
   files.forEach((element) => {
     const filePath = path.join(dir, element)
     const fileName = path.basename(filePath)
     const stat = fs.statSync(filePath)
-    const file = new Folder({
+    const file = new File({
       ...stat,
       name: fileName,
       type: stat.isDirectory() ? TypeEnum.FOLDER : TypeEnum.FILE

@@ -5,7 +5,7 @@ enum TypeEnum {
   FILE = 'file'
 }
 
-class Folder {
+class File {
   id: number
   name: string
   size: number
@@ -24,4 +24,4 @@ class Folder {
   }
 }
 
-export { Folder, TypeEnum }
+export { File, TypeEnum }

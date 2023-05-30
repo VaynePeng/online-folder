@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@icelf/eslint-config": "workspace:^",
+    "@icelf/model": "workspace:^",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
