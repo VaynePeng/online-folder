@@ -1,6 +1,6 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { File, TypeEnum } from '@icelf/model/file'
+import { File, TypeEnum } from '../file/file'
 
 const getFiles = (dir: string): Array<File> => {
   const files = fs.readdirSync(dir)

@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common'
-import { File } from '@icelf/model/file'
+import { File } from './file'
 import { getFiles } from '../common/file'
 
 @Injectable()
