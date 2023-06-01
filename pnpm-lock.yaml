@@ -7,6 +7,9 @@ importers:
       dayjs:
         specifier: ^1.11.7
         version: 1.11.7
+      typescript:
+        specifier: ^5.0.4
+        version: 5.0.4
 
   packages/components: {}
 
