@@ -18,8 +18,12 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@/*": ["src/*"],
-      "@icelf/*": ["../*"],
+      "@/*": [
+        "src/*"
+      ],
+      "@icelf/model/*": [
+        "../model/src/*"
+      ],
     }
   }
 }
