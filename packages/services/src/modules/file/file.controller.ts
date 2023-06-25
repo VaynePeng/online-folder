@@ -2,6 +2,7 @@ import { Controller, Get, Post, Req } from '@nestjs/common'
 import { File } from '@/model/file'
 import { Request } from 'express'
 import { FileService } from './file.service'
+import { Res } from '@/common/result'
 
 @Controller('file')
 export class FileController {
@@ -12,7 +13,7 @@ export class FileController {
   }
 
   @Get('list')
-  getFileList(): Array<File> {
+  getFileList(): Res<Array<File>> {
     return this.fileService.getFileList()
   }
 
