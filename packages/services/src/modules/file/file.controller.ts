@@ -1,5 +1,5 @@
 import { Controller, Get, Post, Req } from '@nestjs/common'
-import { File } from '@icelf/model/file'
+import { File } from '@/model/file'
 import { Request } from 'express'
 import { FileService } from './file.service'
 
